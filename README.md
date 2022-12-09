@@ -1,3 +1,10 @@
+#Team-Members
+
+Ritish Thareja (LIT2019058)
+Muskan Kumari  (LIT2019030)
+Pallavi Kumari (LIT2019048)
+Kanu Priya     (LIT2019075)
+
 # TreePlayground
 #### Tree Visualization Tool for Learning Data Structure and Algorithm.
 

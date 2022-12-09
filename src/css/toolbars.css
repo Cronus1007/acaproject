@@ -1,0 +1,168 @@
+.top-toolbar {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    height: 50px;
+    width: 100vw;
+}
+
+.top-toolbar-item {
+    margin: 1px 10px;
+}
+
+.top-toolbar button {
+    width: 85px;
+}
+
+#interval-ranger {
+    width: 120px;
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+#interval-ranger span {
+    white-space: nowrap;
+    font-weight: bold;
+}
+
+#interval-ranger input {
+    width: 100%;
+}
+
+.left-toolbar {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    top: 150px;
+    left: 50px;
+    width: 100px;
+}
+
+.left-toolbar #tree-type-selector {
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 60px;
+    padding: 6px 4px;
+    font-size: 16px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.left-toolbar button {
+    width: 100%;
+}
+
+.left-toolbar #tree-scale-ranger {
+    width: 100%;
+    align-self: center;
+}
+
+.left-toolbar #tree-scale-ranger input {
+    transform: rotate(-90deg);
+    transform-origin: bottom;
+    position: relative;
+    left: -15px;
+    width: 150px;
+    display: inline-block;
+}
+
+.left-toolbar #tree-scale-ranger h4 {
+    text-align: center;
+    display: block;
+    position: relative;
+    top: 130px;
+    white-space: nowrap;
+}
+
+/* Pad */
+@media screen and (max-width: 768px) {
+    .top-toolbar {
+        flex-wrap: wrap;
+        justify-content: left;
+        width: 350px;
+        left: 50%;
+        transform: translateX(-50%);
+        transform-origin: top;
+    }
+    #interval-ranger {
+        width: 110px;
+    }
+    .left-toolbar {
+        width: 350px;
+        padding: 0;
+        left: 50%;
+        top: 112px;
+        transform: translateX(-50%);
+        transform-origin: top;
+        height: 50px;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+    }
+    .left-toolbar-item {
+        margin: 5px 10px;
+    }
+    .left-toolbar button {
+        width: 85px;
+    }
+    .left-toolbar #tree-type-selector {
+        width: 85px;
+        height: 35px;
+        margin: 0 10px;
+    }
+    .left-toolbar #tree-scale-ranger {
+        width: 110px;
+    }
+    .left-toolbar #tree-scale-ranger input {
+        width: 100%;
+        left: 0;
+        transform: none;
+    }
+    .left-toolbar #tree-scale-ranger h4 {
+        top: 0;
+    }
+}
+
+/* Phone */
+@media screen and (max-width: 376px) {
+    .top-toolbar {
+        width: 300px;
+    }
+    .top-toolbar-item {
+        margin: 0px 5px;
+    }
+    #interval-ranger {
+        width: 100px;
+    }
+    .left-toolbar {
+        width: 300px;
+        top: 106px;
+    }
+    .left-toolbar-item {
+        margin: 5px 5px;
+    }
+    .left-toolbar #tree-scale-ranger {
+        width: 100px;
+    }
+}
+
+/* Horizontally */
+@media screen and (max-height: 500px) and (min-width: 768px) {
+    .left-toolbar {
+        left: 20px;
+        top: 100px;
+    }
+    .left-toolbar #tree-scale-ranger input {
+        width: 100px;
+        left: 5px;
+        top: -40px;
+    }
+    .left-toolbar #tree-scale-ranger h4 {
+        top: 60px;
+    }
+}
